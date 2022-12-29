@@ -1,0 +1,44 @@
+{
+	"live loop": {
+		"prefix": "live_l",
+		"body": [
+			"live_loop :$1 do",
+			"\t$0",
+			"\tsleep",
+			"end",
+		],
+	},
+	"euclidean rhytmhs": {
+		"prefix": "spread",
+		"body": "(spread $1, $2, rotate: $0)"
+	},
+	"finite loops": {
+		"prefix": ".time",
+		"body": [
+			".times do",
+			"\t$0",
+			"\tsleep",
+			"end",
+		],
+	},
+	"rings": {
+		"prefix": "ring",
+		"body": "(ring $0)",
+	},
+	"knits": {
+		"prefix": "knit",
+		"body": "(knit $1, $0)"
+	},
+	"line": {
+		"prefix": "line",
+		"body": "(line $1, $2, steps: $0)",
+	},
+	"range": {
+		"prefix": "range",
+		"body": "(range $1, $2, step: $0)",
+	},
+	"progression": {
+		"prefix": "chord_d",
+		"body": "(chord_degree ${1:degree}, ${2:tonic}, ${3:scale_name}, $0)",
+	},
+}
