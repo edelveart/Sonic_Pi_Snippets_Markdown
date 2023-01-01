@@ -41,4 +41,56 @@
 		"prefix": "chord_d",
 		"body": "(chord_degree ${1:degree}, ${2:tonic}, ${3:scale_name}, $0)",
 	},
+	"effects": {
+		"prefix": "with_f",
+		"body": [
+		"with_fx :$1 do",
+		"\t$0 ",
+		"end"
+		]
+	},
+	// RANDOM METHODS
+	"rrand float": {
+		"prefix": "rrand",
+		"body": "(rrand $1, $0)"
+	},
+	"rrand integer": {
+		"prefix": "rrand_i",
+		"body": "(rrand $1, $0)"
+	},
+	"ratio distribution": {
+		"prefix": "rdi",
+		"body": "(rdist $1, $0)",
+	},
+	// Melody
+	"pattern melody": {
+		"prefix": "play_patt",
+		"body": "play_pattern_timed $1,$2, release: $0",
+		"description": "release: (ring x,y,z,...).tick do not work"
+	},
+	"density": {
+		"prefix": "density",
+		"body": [
+			"density $1 do",
+			"\t$0",
+			"end"
+		],
+	},
+	"density dice": {
+		"prefix": "density di",
+		"body": [
+			"density dice($1) do",
+			"\t$0",
+			"end"
+		],
+	},
+
+	// FUNCTION
+	"function": {
+	"prefix": "define",
+	"body": [
+		"define :$1 do |$2|",
+		"\t$0",
+		"end"]
+	},
 }
