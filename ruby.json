@@ -93,4 +93,53 @@
 		"\t$0",
 		"end"]
 	},
+	
+	// RINGS
+	"reverse": {
+		"prefix": ".rev",
+		"body": ".reverse",
+	},
+	"sort": {
+		"prefix": ".sor",
+		"body": ".sort"
+	},
+	"shuffle": {
+		"prefix": ".shuf",
+		"body": ".shuffle"
+	},
+	"reflect": {
+		"prefix": ".refl",
+		"body": ".reflect",
+	},
+	"mirror": {
+		"prefix": ".mir",
+		"body": ".mirror"
+	},
+	// Ring methods + parameters
+	"pick": {
+		"prefix": ".pic",
+		"body": ".pick($0)"
+	},
+	"take": {
+		"prefix": ".tak",
+		"body": ".take($0)"
+	},
+	"drop": {
+		"prefix": ".dro",
+		"body": ".drop($0)",
+	},
+	"stretch": {
+		"prefix": ".stret",
+		"body": ".stretch($0)",
+	},
+	"repeat": {
+		"prefix": ".rep",
+		"body": ".repeat($0)",
+	},
+	"scale" : {
+		"prefix": ".scal",
+		"body": ".scale($0)"
+	}
+	
+	
 }
