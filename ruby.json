@@ -1,4 +1,4 @@
-{
+{	// LOOPS
 	"live loop": {
 		"prefix": "live_l",
 		"body": [
@@ -8,10 +8,7 @@
 			"end",
 		],
 	},
-	"euclidean rhytmhs": {
-		"prefix": "spread",
-		"body": "(spread $1, $2, rotate: $0)"
-	},
+
 	"finite loops": {
 		"prefix": ".time",
 		"body": [
@@ -21,6 +18,8 @@
 			"end",
 		],
 	},
+	
+	// RINGS
 	"rings": {
 		"prefix": "ring",
 		"body": "(ring $0)",
@@ -37,10 +36,16 @@
 		"prefix": "range",
 		"body": "(range $1, $2, step: $0)",
 	},
+	"euclidean rhytmhs": {
+		"prefix": "spread",
+		"body": "(spread $1, $2, rotate: $0)"
+	},
 	"progression": {
 		"prefix": "chord_d",
 		"body": "(chord_degree ${1:degree}, ${2:tonic}, ${3:scale_name}, $0)",
 	},
+	
+	// EFFECTS
 	"effects": {
 		"prefix": "with_f",
 		"body": [
@@ -49,6 +54,7 @@
 		"end"
 		]
 	},
+	
 	// RANDOM METHODS
 	"rrand float": {
 		"prefix": "rrand",
@@ -62,6 +68,7 @@
 		"prefix": "rdi",
 		"body": "(rdist $1, $0)",
 	},
+	
 	// Melody
 	"pattern melody": {
 		"prefix": "play_patt",
@@ -84,7 +91,7 @@
 			"end"
 		],
 	},
-
+	
 	// FUNCTION
 	"function": {
 	"prefix": "define",
@@ -94,7 +101,7 @@
 		"end"]
 	},
 	
-	// RINGS
+	// Ring methods
 	"reverse": {
 		"prefix": ".rev",
 		"body": ".reverse",
