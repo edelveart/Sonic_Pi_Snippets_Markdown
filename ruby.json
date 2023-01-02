@@ -1,4 +1,5 @@
 {	// LOOPS
+	
 	"live loop": {
 		"prefix": "live_l",
 		"body": [
@@ -8,7 +9,6 @@
 			"end",
 		],
 	},
-
 	"finite loops": {
 		"prefix": ".time",
 		"body": [
@@ -69,12 +69,14 @@
 		"body": "(rdist $1, $0)",
 	},
 	
-	// Melody
+	// MELODY
 	"pattern melody": {
 		"prefix": "play_patt",
 		"body": "play_pattern_timed $1,$2, release: $0",
 		"description": "release: (ring x,y,z,...).tick do not work"
 	},
+	
+	// BLOCKS
 	"density": {
 		"prefix": "density",
 		"body": [
@@ -122,6 +124,7 @@
 		"prefix": ".mir",
 		"body": ".mirror"
 	},
+	
 	// Ring methods + parameters
 	"pick": {
 		"prefix": ".pic",
@@ -147,6 +150,7 @@
 		"prefix": ".scal",
 		"body": ".scale($0)"
 	},
+	
 	// Conditional 
 	"conditionals": {
 		"prefix": "if ",
@@ -158,6 +162,7 @@
 			"end"
 		]
 	},
+	
 	// Threads
 	"threads": {
 		"prefix": "in_th",
