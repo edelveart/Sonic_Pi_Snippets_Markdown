@@ -139,7 +139,25 @@
 	"scale" : {
 		"prefix": ".scal",
 		"body": ".scale($0)"
-	}
-	
-	
+	},
+	// Conditional 
+	"conditionals": {
+		"prefix": "if ",
+		"body": [
+			"if $1",
+			"\t$2",
+			"else",
+			"\t$0",
+			"end"
+		]
+	},
+	// Threads
+	"threads": {
+		"prefix": "in_th",
+		"body": [
+			"in_thread do",
+			"\t$0",
+			"end"
+		]
+	},
 }
